@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catch the Falling Objects Game</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; background-color: #f9f9f9; color: #333; }
+        img, video { max-width: 100%; height: auto; }
+        h1, h2 { color: #2c3e50; }
+        ul { margin-left: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Catch the Falling Objects Game</h1>
+
+    <h2>Project Outline</h2>
+    <p>
+        An interactive browser game where the player uses a real-world potentiometer connected to an Arduino to move a paddle and catch falling circles. The goal is to catch as many falling objects as possible before missing three.
+    </p>
+
+    <h2>Narrative Description</h2>
+    <p>
+        The potentiometer’s analog readings are sent from the Arduino to the browser via serial communication. In the browser, P5.js reads the potentiometer data and maps it to the paddle’s horizontal position.
+    </p>
+    <p>
+        Circles fall from the top of the screen at random positions. Each time the player catches a circle, the score increases. Missing three circles ends the game.
+    </p>
+
+    <h2>Images</h2>
+    <p>Here’s a photo of the Arduino + potentiometer setup and a screenshot of the game:</p>
+    <!-- <img src="YOUR_IMAGE_URL_HERE" alt="Arduino setup"> -->
+    <!-- <br> -->
+    <!-- <img src="YOUR_GAME_SCREENSHOT_URL_HERE" alt="Game screenshot"> -->
+
+    <h2>Video Example</h2>
+    <p>Watch the game in action:</p>
+    <!-- <p><a href="YOUR_VIDEO_URL_HERE" target="_blank">Click here to view the video</a></p> -->
+
+    <h2>Schematics & Diagrams</h2>
+    <p>Below is a breadboard diagram of how the potentiometer connects to the Arduino:</p>
+    <!-- <img src="YOUR_BREADBOARD_IMAGE_URL_HERE" alt="Breadboard diagram"> -->
+
+    <h2>Thoughts on Future Development</h2>
+    <ul>
+        <li>Add more falling object types (bonus points or hazards).</li>
+        <li>Use Tone.js to add sound effects when catching or missing circles.</li>
+        <li>Increase falling speed or add difficulty progression over time.</li>
+        <li>Store high scores using browser local storage or a small backend.</li>
+    </ul>
+
+    <h2>Credits</h2>
+    <p>Developed by Dylan Fremin. Created using Arduino, P5.js, and the Web Serial API.</p>
+</body>
+</html>

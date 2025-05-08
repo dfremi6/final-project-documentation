@@ -5,32 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catch the Falling Objects Game</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; background-color: #f9f9f9; color: #333; }
-        img, video { max-width: 100%; height: auto; }
-        h1, h2 { color: #2c3e50; }
-        ul { margin-left: 20px; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f6f8;
+            color: #333;
+        }
+        header {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        main {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        h2 {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+        p {
+            line-height: 1.6;
+        }
+        ul {
+            margin-left: 20px;
+        }
+        a {
+            color: #2980b9;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            font-size: 0.9em;
+            color: #777;
+        }
+        img, video {
+            max-width: 100%;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
     </style>
 </head>
 <body>
-    <h1>Catch the Falling Objects Game</h1>
 
+<header>
+    <h1>Catch the Falling Objects Game</h1>
+</header>
+
+<main>
     <h2>Project Outline</h2>
     <p>
-        An interactive browser game where the player uses a real-world potentiometer connected to an Arduino to move a paddle and catch falling circles. The goal is to catch as many falling objects as possible before missing three.
+        An interactive browser game where the player uses a real-world potentiometer connected to an Arduino to move a paddle and catch falling circles.
+        The goal is to catch as many falling objects as possible before missing three.
     </p>
 
     <h2>Narrative Description</h2>
     <p>
-        The potentiometer’s analog readings are sent from the Arduino to the browser via serial communication. In the browser, P5.js reads the potentiometer data and maps it to the paddle’s horizontal position.
+        The potentiometer’s analog readings are sent from the Arduino to the browser via serial communication.
+        In the browser, P5.js reads the potentiometer data and maps it to the paddle’s horizontal position.
     </p>
     <p>
-        Circles fall from the top of the screen at random positions. Each time the player catches a circle, the score increases. Missing three circles ends the game.
+        Circles fall from the top of the screen at random positions.
+        Each time the player catches a circle, the score increases.
+        Missing three circles ends the game.
     </p>
 
     <h2>Images</h2>
     <p>Here’s a photo of the Arduino + potentiometer setup and a screenshot of the game:</p>
     <!-- <img src="YOUR_IMAGE_URL_HERE" alt="Arduino setup"> -->
-    <!-- <br> -->
     <!-- <img src="YOUR_GAME_SCREENSHOT_URL_HERE" alt="Game screenshot"> -->
 
     <h2>Video Example</h2>
@@ -38,7 +89,7 @@
     <!-- <p><a href="YOUR_VIDEO_URL_HERE" target="_blank">Click here to view the video</a></p> -->
 
     <h2>Schematics & Diagrams</h2>
-    <p>Below is a breadboard diagram of how the potentiometer connects to the Arduino:</p>
+    <p>Breadboard diagram showing how the potentiometer connects to the Arduino:</p>
     <!-- <img src="YOUR_BREADBOARD_IMAGE_URL_HERE" alt="Breadboard diagram"> -->
 
     <h2>Thoughts on Future Development</h2>
@@ -51,5 +102,11 @@
 
     <h2>Credits</h2>
     <p>Developed by Dylan Fremin. Created using Arduino, P5.js, and the Web Serial API.</p>
+</main>
+
+<footer>
+    &copy; 2025 Dylan Fremin | Arduino + P5.js Game Documentation
+</footer>
+
 </body>
 </html>
